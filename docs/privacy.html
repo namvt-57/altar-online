@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chính Sách Quyền Riêng Tư (Privacy Policy) - Tâm Hương: Bàn Thờ Online</title>
+  <meta name="description" content="Chính sách quyền riêng tư và bảo mật dữ liệu của ứng dụng Tâm Hương: Bàn Thờ Online trên Google Play Store.">
+  <style>
+    :root {
+      --bg-color: #120b08;
+      --card-bg: #1c120c;
+      --card-border: #3d2618;
+      --text-main: #ecdcc9;
+      --text-muted: #ad9782;
+      --accent-gold: #e5b358;
+      --accent-gold-light: #ffd88a;
+      --accent-red: #8a2a1e;
+      --header-bg: #22140e;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.7;
+      padding: 0;
+      margin: 0;
+    }
+    header {
+      background: linear-gradient(180deg, #2a1810 0%, #170d08 100%);
+      border-bottom: 2px solid var(--accent-gold);
+      padding: 36px 20px 24px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    }
+    .brand-title {
+      font-family: "Noto Serif", Georgia, serif;
+      font-size: 28px;
+      color: var(--accent-gold-light);
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+    .brand-sub {
+      font-size: 14px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .lang-switcher {
+      margin-top: 16px;
+      display: inline-flex;
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid var(--card-border);
+      border-radius: 30px;
+      padding: 4px;
+      gap: 6px;
+    }
+    .lang-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      padding: 8px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.25s ease;
+    }
+    .lang-btn.active {
+      background: var(--accent-red);
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(138, 42, 30, 0.5);
+    }
+    .lang-btn:hover:not(.active) {
+      color: var(--accent-gold-light);
+    }
+    .container {
+      max-width: 860px;
+      margin: 32px auto;
+      padding: 0 20px 60px;
+    }
+    .doc-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 36px 32px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    }
+    h1 {
+      font-size: 26px;
+      color: var(--accent-gold);
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 14px;
+    }
+    .meta-bar {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    h2 {
+      font-size: 19px;
+      color: var(--accent-gold-light);
+      margin: 26px 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    h2::before {
+      content: "✦";
+      color: var(--accent-gold);
+      font-size: 14px;
+    }
+    p {
+      margin-bottom: 14px;
+      color: #dfcebc;
+    }
+    ul {
+      margin-left: 24px;
+      margin-bottom: 16px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    strong {
+      color: #fff;
+    }
+    a {
+      color: var(--accent-gold);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: var(--accent-gold-light);
+    }
+    .highlight-box {
+      background: rgba(229, 179, 88, 0.08);
+      border-left: 4px solid var(--accent-gold);
+      padding: 14px 18px;
+      border-radius: 0 8px 8px 0;
+      margin: 18px 0;
+    }
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--card-border);
+      background: #0d0705;
+    }
+    .footer-links {
+      margin-top: 8px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+    .footer-links a:hover {
+      color: var(--accent-gold);
+    }
+    .lang-section {
+      display: none;
+    }
+    .lang-section.visible {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand-title">TÂM HƯƠNG • BÀN THỜ ONLINE</div>
+    <div class="brand-sub">Ứng Dụng Tâm Linh & Không Gian Thờ Truyền Thống Việt Nam</div>
+    <div class="lang-switcher">
+      <button class="lang-btn active" id="btn-vi" onclick="switchLang('vi')">Tiếng Việt</button>
+      <button class="lang-btn" id="btn-en" onclick="switchLang('en')">English</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="doc-card">
+
+      <!-- TIẾNG VIỆT -->
+      <div id="section-vi" class="lang-section visible">
+        <h1>CHÍNH SÁCH QUYỀN RIÊNG TƯ (PRIVACY POLICY)</h1>
+        <div class="meta-bar">
+          <span>📦 Ứng dụng: <strong>Tâm Hương: Bàn Thờ Online</strong></span>
+          <span>🏷️ Mã gói (Package ID): <strong>com.tamhuong.banthoonline</strong></span>
+          <span>📅 Ngày hiệu lực: <strong>05/11/2026</strong></span>
+        </div>
+
+        <div class="highlight-box">
+          <strong>Tóm tắt cam kết bảo mật:</strong> Ứng dụng <em>Tâm Hương: Bàn Thờ Online</em> tôn trọng tuyệt đối sự trang nghiêm và quyền riêng tư thiêng liêng của quý gia chủ. Ứng dụng <strong>không thu thập, không lưu trữ trên máy chủ và không bán bất kỳ thông tin cá nhân nào</strong> của người dùng. Mọi dữ liệu bàn thờ, đồ thờ, bài khấn và di ảnh được lưu trữ cục bộ 100% trên chính thiết bị của bạn.
+        </div>
+
+        <h2>1. Giới Thiệu Chung</h2>
+        <p>Chính sách Quyền Riêng Tư này mô tả cách Ứng dụng <strong>"Tâm Hương: Bàn Thờ Online"</strong> (sau đây gọi là "chúng tôi", "ứng dụng") quản lý dữ liệu khi bạn cài đặt và sử dụng ứng dụng trên thiết bị Android qua Google Play Store.</p>
+        <p>Bằng việc cài đặt và trải nghiệm ứng dụng, bạn đồng ý với các điều khoản được quy định trong chính sách này.</p>
+
+        <h2>2. Dữ Liệu Chúng Tôi Thu Thập & Lưu Trữ Cục Bộ</h2>
+        <p>Ứng dụng hoạt động theo nguyên tắc <strong>Offline-First & Local Storage</strong>:</p>
+        <ul>
+          <li><strong>Không yêu cầu tài khoản:</strong> Bạn không cần đăng ký tài khoản, không cần cung cấp họ tên, số điện thoại, email hay mạng xã hội để sử dụng ứng dụng.</li>
+          <li><strong>Dữ liệu tiến trình tâm linh:</strong> Số điểm Duyên Lành, danh sách đồ thờ đã thỉnh, mẫu bàn thờ đang bài trí, bài văn khấn tự soạn và lịch sử thắp hương được mã hóa và lưu trữ cục bộ duy nhất trong thư mục an toàn <code>user://</code> trên bộ nhớ máy của bạn. Chúng tôi không truyền tải hay đồng bộ các dữ liệu này lên bất kỳ máy chủ bên ngoài nào.</li>
+        </ul>
+
+        <h2>3. Quyền Truy Cập Thiết Bị (Android Permissions)</h2>
+        <p>Ứng dụng chỉ yêu cầu các quyền hệ thống thiết yếu nhằm phục vụ trực tiếp các tính năng tâm linh do chính bạn chủ động kích hoạt:</p>
+        <ul>
+          <li><strong>Quyền Truy Cập Tệp Âm Thanh (<code>READ_MEDIA_AUDIO</code> / <code>READ_EXTERNAL_STORAGE</code>):</strong> Quyền này chỉ được kích hoạt khi bạn chủ động nhấn vào tính năng <em>"Nhạc Từ Máy"</em> trong màn Chuông Mõ để phát bài kinh kệ hoặc nhạc thiền ưa thích từ thiết bị cá nhân. Tệp âm thanh chỉ được đọc và phát nội bộ trong máy, tuyệt đối không bị tải lên mạng.</li>
+          <li><strong>Quyền Truy Cập Hình Ảnh (<code>READ_MEDIA_IMAGES</code> / <code>READ_EXTERNAL_STORAGE</code>):</strong> Quyền này chỉ được kích hoạt khi bạn chủ động nhấn nút <em>"Thỉnh Di Ảnh"</em> để chọn ảnh chân dung ông bà, cha mẹ hoặc người thân đã khuất đặt lên khung ảnh thờ. Hình ảnh di ảnh được lưu cục bộ trong không gian riêng tư của ứng dụng, không truyền ra ngoài và không chia sẻ cho bên thứ ba.</li>
+          <li><strong>Quyền Truy Cập Mạng Internet (<code>INTERNET</code>):</strong> Được sử dụng để:
+            <ul>
+              <li>Truy vấn thông báo cập nhật phiên bản mới và cấu hình tâm linh (Remote Config từ GitHub Gist công khai).</li>
+              <li>Tải quảng cáo video tích phúc tự nguyện qua mạng Google AdMob.</li>
+              <li>Thực hiện các giao dịch phát tâm công đức an toàn qua hệ sinh thái Google Play Billing.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h2>4. Dịch Vụ Của Bên Thứ Ba (Third-Party Services)</h2>
+        <p>Để duy trì ứng dụng và hỗ trợ quý gia chủ, chúng tôi tích hợp các dịch vụ chuẩn hóa từ Google:</p>
+        <ul>
+          <li><strong>Google AdMob (Quảng Cáo Tích Phúc):</strong> Hiển thị video quảng cáo ngắn khi bạn tự nguyện bấm xem để nhận thêm Duyên Lành dâng lễ. Google AdMob có thể thu thập mã định danh quảng cáo ẩn danh (Advertising ID) và dữ liệu kỹ thuật theo tiêu chuẩn của Google. Quý gia chủ có thể xem chi tiết tại: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Chính Sách Bảo Mật Của Google</a>.</li>
+          <li><strong>Google Play In-App Billing:</strong> Mọi giao dịch phát tâm công đức (IAP) được xử lý trực tiếp bởi cổng thanh toán bảo mật của Google Play. Chúng tôi không bao giờ tiếp cận, lưu trữ hay yêu cầu thông tin thẻ ngân hàng hoặc mật khẩu tài khoản Google của bạn.</li>
+        </ul>
+
+        <h2>5. Quyền Xóa Dữ Liệu & Hủy Ứng Dụng</h2>
+        <p>Vì toàn bộ thông tin được lưu trữ trên máy của bạn:</p>
+        <ul>
+          <li>Bạn có thể xóa toàn bộ dữ liệu ứng dụng bất cứ lúc nào bằng cách vào: <em>Cài đặt thiết bị &gt; Ứng dụng &gt; Tâm Hương &gt; Xóa bộ nhớ / Xóa dữ liệu</em>.</li>
+          <li>Khi gỡ cài đặt ứng dụng khỏi thiết bị, toàn bộ di ảnh, bài văn khấn tự soạn và dữ liệu bàn thờ sẽ tự động được xóa vĩnh viễn khỏi thiết bị.</li>
+        </ul>
+
+        <h2>6. Quyền Riêng Tư Của Trẻ Em (COPPA Compliance)</h2>
+        <p>Ứng dụng của chúng tôi không hướng tới đối tượng trẻ em dưới 13 tuổi và không cố ý thu thập thông tin nhận dạng cá nhân từ trẻ em. Mọi nội dung trong ứng dụng đều mang tính thuần phong mỹ tục, văn hóa tâm linh truyền thống và tôn nghiêm.</p>
+
+        <h2>7. Thay Đổi Chính Sách</h2>
+        <p>Chúng tôi có thể cập nhật Chính Sách Quyền Riêng Tư này theo thời gian để phản ánh các cải tiến về tính năng hoặc cập nhật yêu cầu từ Google Play. Mọi thay đổi sẽ được cập nhật công khai tại đường dẫn URL này.</p>
+
+        <h2>8. Thông Tin Liên Hệ & Hỗ Trợ</h2>
+        <p>Nếu quý gia chủ có bất kỳ thắc mắc, đóng góp ý kiến hoặc cần hỗ trợ về quyền riêng tư trong ứng dụng, xin vui lòng hoan hỷ liên hệ với chúng tôi qua:</p>
+        <ul>
+          <li><strong>Nhà phát triển:</strong> Đội ngũ Tâm Hương - Bàn Thờ Online</li>
+          <li><strong>Email hỗ trợ:</strong> <a href="mailto:namvt57.developer@gmail.com">namvt57.developer@gmail.com</a></li>
+          <li><strong>Dự án GitHub:</strong> <a href="https://github.com/namvt-57" target="_blank" rel="noopener">github.com/namvt-57</a></li>
+        </ul>
+      </div>
+
+      <!-- ENGLISH -->
+      <div id="section-en" class="lang-section">
+        <h1>PRIVACY POLICY</h1>
+        <div class="meta-bar">
+          <span>📦 Application: <strong>Tâm Hương: Bàn Thờ Online (Online Altar)</strong></span>
+          <span>🏷️ Package Name: <strong>com.tamhuong.banthoonline</strong></span>
+          <span>📅 Effective Date: <strong>November 5, 2026</strong></span>
+        </div>
+
+        <div class="highlight-box">
+          <strong>Privacy Summary:</strong> The app <em>Tâm Hương: Bàn Thờ Online</em> deeply values your spiritual reverence and sacred personal privacy. The app <strong>does not collect, store on external servers, or sell any personal data</strong>. All altar customizations, offerings, prayers, and memorial photos are kept 100% locally on your device.
+        </div>
+
+        <h2>1. Overview</h2>
+        <p>This Privacy Policy outlines how the mobile application <strong>"Tâm Hương: Bàn Thờ Online"</strong> ("we", "our", or "the app") handles data when you download and use our application distributed via the Google Play Store.</p>
+        <p>By installing and using the app, you consent to the practices described in this policy.</p>
+
+        <h2>2. Data Collection & Local Storage</h2>
+        <p>The app is built upon an <strong>Offline-First & Local Storage</strong> architecture:</p>
+        <ul>
+          <li><strong>No Account Required:</strong> You do not need to register an account or provide names, emails, phone numbers, or social media logins to use the app.</li>
+          <li><strong>Local Spiritual Progress:</strong> Merit points (Duyên Lành), acquired offerings, selected altar designs, custom prayers, and incense burning history are saved securely within the app's local sandbox storage directory (<code>user://</code>) on your device. We do not upload or sync this data to any remote server.</li>
+        </ul>
+
+        <h2>3. Device Permissions & Purpose</h2>
+        <p>The app only requests Android permissions strictly required to provide user-initiated spiritual features:</p>
+        <ul>
+          <li><strong>Audio Access (<code>READ_MEDIA_AUDIO</code> / <code>READ_EXTERNAL_STORAGE</code>):</strong> Only invoked when you explicitly choose <em>"Device Audio"</em> in the Bell & Wooden Fish panel to play your own meditation music or sutra chanting from local storage. Audio files are read locally and never uploaded.</li>
+          <li><strong>Photos Access (<code>READ_MEDIA_IMAGES</code> / <code>READ_EXTERNAL_STORAGE</code>):</strong> Only invoked when you voluntarily tap <em>"Select Portrait Photo"</em> to honor a deceased family member on your private memorial altar. The photo stays strictly on your device and is never shared or transmitted.</li>
+          <li><strong>Internet Access (<code>INTERNET</code>):</strong> Used solely to:
+            <ul>
+              <li>Check for remote configuration announcements and app updates via public GitHub Gist.</li>
+              <li>Deliver voluntary rewarded video ads via Google AdMob.</li>
+              <li>Process voluntary devotional merit in-app purchases through Google Play Billing.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h2>4. Third-Party Services</h2>
+        <p>To sustain development and support users, we utilize verified Google services:</p>
+        <ul>
+          <li><strong>Google AdMob:</strong> Displays short voluntary rewarded video ads when requested by the user to gain merit points. Google AdMob may collect anonymous device advertising identifiers and diagnostic metrics according to Google's policies. For more details, refer to: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+          <li><strong>Google Play In-App Billing:</strong> All optional devotional support packages are processed directly through Google Play's encrypted billing system. We never access, handle, or store your credit card or financial credentials.</li>
+        </ul>
+
+        <h2>5. Data Deletion & Retention</h2>
+        <p>Because all data is maintained locally on your device:</p>
+        <ul>
+          <li>You can clear all stored data at any time via: <em>Device Settings &gt; Apps &gt; Tâm Hương &gt; Storage &gt; Clear Storage / Clear Data</em>.</li>
+          <li>Uninstalling the application immediately and permanently removes all ancestral portraits, custom prayers, and altar configurations from your device.</li>
+        </ul>
+
+        <h2>6. Children's Privacy (COPPA Compliance)</h2>
+        <p>Our application is not intended for children under the age of 13. We do not knowingly collect personal identifiable information from children. All content reflects traditional cultural customs and reverent contemplation.</p>
+
+        <h2>7. Policy Updates</h2>
+        <p>We may update this Privacy Policy from time to time to reflect feature enhancements or regulatory changes. Any updates will be published immediately at this public URL.</p>
+
+        <h2>8. Contact & Developer Information</h2>
+        <p>If you have any questions, feedback, or inquiries regarding your privacy when using our application, please contact us at:</p>
+        <ul>
+          <li><strong>Developer:</strong> Tâm Hương Development Team</li>
+          <li><strong>Support Email:</strong> <a href="mailto:namvt57.developer@gmail.com">namvt57.developer@gmail.com</a></li>
+          <li><strong>GitHub Repository:</strong> <a href="https://github.com/namvt-57" target="_blank" rel="noopener">github.com/namvt-57</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div>© 2026 Tâm Hương: Bàn Thờ Online • Bản Quyền Đã Được Bảo Lưu</div>
+    <div class="footer-links">
+      <a href="index.html">Trang Chủ (Home)</a>
+      <a href="privacy.html">Chính Sách Riêng Tư (Privacy)</a>
+      <a href="terms.html">Điều Khoản (Terms)</a>
+    </div>
+  </footer>
+
+  <script>
+    function switchLang(lang) {
+      document.getElementById('section-vi').classList.toggle('visible', lang === 'vi');
+      document.getElementById('section-en').classList.toggle('visible', lang === 'en');
+      document.getElementById('btn-vi').classList.toggle('active', lang === 'vi');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.documentElement.lang = lang;
+    }
+
+    // Mặc định luôn là Tiếng Việt (chỉ chuyển sang Tiếng Anh nếu có tham số ?lang=en trên URL)
+    (function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('lang') === 'en') {
+        switchLang('en');
+      } else {
+        switchLang('vi');
+      }
+    })();
+  </script>
+</body>
+</html>
+

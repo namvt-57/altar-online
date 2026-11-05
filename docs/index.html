@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tâm Hương • Bàn Thờ Online - Không Gian Thờ Truyền Thống Việt Nam</title>
+  <meta name="description" content="Tâm Hương: Bàn Thờ Online - Ứng dụng dâng hương, tụng kinh, chuông mõ chánh niệm, hóa vàng và bài trí 8 mẫu bàn thờ truyền thống Việt Nam trang nghiêm trên điện thoại.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <style>
+    :root {
+      --bg: #100a07;
+      --card-bg: #1a100b;
+      --card-border: #3b2416;
+      --text: #ecdcc9;
+      --text-muted: #ab9580;
+      --gold: #e5b358;
+      --gold-light: #ffd88a;
+      --red: #8f2a1e;
+      --red-hover: #aa3628;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    header {
+      background: radial-gradient(circle at 50% 20%, #2e1910 0%, #140c08 100%);
+      padding: 60px 20px 40px;
+      text-align: center;
+      border-bottom: 2px solid var(--gold);
+      position: relative;
+    }
+    .logo-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 30px;
+      box-shadow: 0 10px 35px rgba(229, 179, 88, 0.35), 0 4px 15px rgba(0, 0, 0, 0.8);
+      border: 3px solid var(--gold);
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+    .logo-img:hover {
+      transform: scale(1.05);
+    }
+    h1 {
+      font-family: "Noto Serif", Georgia, serif;
+      font-size: 34px;
+      color: var(--gold-light);
+      letter-spacing: 1.5px;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 17px;
+      color: var(--text-muted);
+      max-width: 650px;
+      margin: 0 auto 24px;
+    }
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--red);
+      color: #fff;
+      padding: 12px 26px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 14px rgba(143, 42, 30, 0.4);
+    }
+    .btn:hover {
+      background: var(--red-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(143, 42, 30, 0.6);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--gold);
+      color: var(--gold-light);
+      box-shadow: none;
+    }
+    .btn-outline:hover {
+      background: rgba(229, 179, 88, 0.15);
+      color: #fff;
+    }
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 26px;
+      color: var(--gold);
+      margin-bottom: 36px;
+      position: relative;
+    }
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 2px;
+      background: var(--gold);
+      margin: 10px auto 0;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 22px;
+      margin-bottom: 60px;
+    }
+    .feature-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 26px;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+    .feature-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold);
+    }
+    .feature-icon {
+      font-size: 38px;
+      margin-bottom: 14px;
+      display: inline-block;
+    }
+    .feature-card h3 {
+      font-size: 20px;
+      color: var(--gold-light);
+      margin-bottom: 10px;
+    }
+    .feature-card p {
+      font-size: 14.5px;
+      color: #cdbdae;
+      line-height: 1.6;
+    }
+    .templates-box {
+      background: linear-gradient(145deg, #1f140e 0%, #150c08 100%);
+      border: 1px solid var(--gold);
+      border-radius: 18px;
+      padding: 36px;
+      margin-bottom: 60px;
+    }
+    .templates-box h2 {
+      font-size: 24px;
+      color: var(--gold-light);
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .templates-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 20px;
+    }
+    .tpl-pill {
+      background: rgba(0, 0, 0, 0.45);
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .tpl-pill span {
+      color: var(--gold);
+      font-weight: bold;
+    }
+    footer {
+      background: #090503;
+      border-top: 1px solid var(--card-border);
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 13.5px;
+      color: var(--text-muted);
+    }
+    .footer-links {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Tâm Hương Logo" class="logo-img">
+    <h1>TÂM HƯƠNG • BÀN THỜ ONLINE</h1>
+    <p class="subtitle">Ứng dụng dâng hương, tĩnh tâm, chuông mõ và gìn giữ nét đẹp văn hóa thờ phụng gia tiên Việt Nam mọi lúc, mọi nơi.</p>
+    <div class="btn-group">
+      <a href="https://play.google.com/store/apps/details?id=com.tamhuong.banthoonline" class="btn" target="_blank" rel="noopener">
+        <span>📲 Tải Trên Google Play</span>
+      </a>
+      <a href="privacy.html" class="btn btn-outline">
+        <span>🛡️ Chính Sách Riêng Tư (Privacy)</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <h2 class="section-title">TÍNH NĂNG NỔI BẬT</h2>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🪔</div>
+        <h3>Thắp Hương Chân Thực</h3>
+        <p>Mô phỏng tàn hương cuốn vàng, làn khói trầm lan tỏa phòng thờ. Đa dạng mẫu hương: Nhang tăm tre, nhang quế, nhang ít khói chung cư, trầm nụ thác khói và nhang vòng đại lễ.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🔔</div>
+        <h3>Chuông Mõ & Nhạc Thiền</h3>
+        <p>Thỉnh Đại Hồng Chung ngân vang, gõ Mõ gỗ tĩnh tâm xua tan muộn phiền. Tích hợp trì tụng Chú Đại Bi âm vang và hòa tấu sáo trúc thiền môn thanh tịnh (CC0), hỗ trợ nhập nhạc từ máy.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">📜</div>
+        <h3>Văn Khấn & Soạn Tự Tâm</h3>
+        <p>Tuyển tập 6 bài văn khấn cổ truyền chuẩn lễ tiết (Mùng Một, Rằm, Giỗ Gia Tiên, Thần Tài, Cầu An, Bao Sái, Tất Niên). Tiện ích dán bài khấn từ clipboard và chế độ tự cuộn khi hành lễ.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🔥</div>
+        <h3>Lò Hóa Vàng Truyền Thống</h3>
+        <p>Hóa lễ vàng mã, tiền âm phủ, thỏi vàng Kim Nguyên Bảo, áo quan gia tiên và ngựa đỏ thần linh. Cơ chế gom tro, tích lũy tro thanh tịnh lưu giữ đạo hiếu trọn vẹn.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🖼️</div>
+        <h3>Di Ảnh Gia Tiên Tưởng Niệm</h3>
+        <p>Thỉnh ảnh chân dung ông bà, cha mẹ hoặc tiên tổ từ máy đặt trang nghiêm lên khung ảnh thờ hoa sen. Dữ liệu ảnh bảo mật 100% cục bộ, không gửi lên mạng.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🌐</div>
+        <h3>Đa Ngôn Ngữ & Phong Cách</h3>
+        <p>Hỗ trợ trọn vẹn song ngữ Tiếng Việt & Tiếng Anh. Tùy chọn 2 phong cách thẩm mỹ: Nét vẽ truyền thống ấm cúng hoặc Thư họa màu nước thanh tịnh.</p>
+      </div>
+    </div>
+
+    <div class="templates-box">
+      <h2>✦ 8 MẪU BÀN THỜ PHONG TỤC VIỆT NAM ✦</h2>
+      <p style="text-align: center; color: #cab8a7; font-size: 15px;">Mỗi mẫu bàn thờ tự động bài trí tôn tượng, số bát hương và đồ tự khí đúng chuẩn nghi lễ:</p>
+      <div class="templates-list">
+        <div class="tpl-pill"><span>1.</span> Mẫu Chung Cư Hiện Đại (1 Bát Hương)</div>
+        <div class="tpl-pill"><span>2.</span> Mẫu Đại Gia Tiên Bề Thế (3 Bát Hương)</div>
+        <div class="tpl-pill"><span>3.</span> Mẫu Cửu Huyền Thất Tổ (Nam Bộ)</div>
+        <div class="tpl-pill"><span>4.</span> Mẫu Thần Tài - Thổ Địa Bệ Cao</div>
+        <div class="tpl-pill"><span>5.</span> Mẫu Thần Tài Sát Đất (Gạch Cổ)</div>
+        <div class="tpl-pill"><span>6.</span> Mẫu Thông Thiên Ngoài Trời (Trụ Đá)</div>
+        <div class="tpl-pill"><span>7.</span> Mẫu Lễ Cúng Mặt Đất (Chiếu Hoa)</div>
+        <div class="tpl-pill"><span>8.</span> Mẫu Bàn Thờ Phật Tại Gia Thanh Tịnh</div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div>© 2026 Tâm Hương: Bàn Thờ Online • Bản Quyền Đã Được Bảo Lưu</div>
+    <div>Nhà phát triển: <strong>namvt-57</strong> • Email: <a href="mailto:namvt57.developer@gmail.com" style="color: var(--gold);">namvt57.developer@gmail.com</a></div>
+    <div class="footer-links">
+      <a href="index.html">Trang Chủ</a>
+      <a href="privacy.html">Chính Sách Quyền Riêng Tư (Privacy Policy)</a>
+      <a href="terms.html">Điều Khoản Sử Dụng (Terms of Service)</a>
+      <a href="https://github.com/namvt-57" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
+
+</body>
+</html>
+
